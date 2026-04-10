@@ -1,0 +1,40 @@
+# CLAUDE.md — Ops Command File (Example)
+
+This file is the source of truth for your team, projects, and task tracking.
+Claude Code auto-loads it on every session start from your home directory.
+
+## Microsoft Planner Reference
+
+**Active plans — the /planner-* commands query these:**
+
+| Plan | ID |
+|------|----|
+| IT Operations | `<YOUR_PLAN_ID_1>` |
+| Engineering Projects | `<YOUR_PLAN_ID_2>` |
+| AI Initiatives | `<YOUR_PLAN_ID_3>` |
+
+## Objectives & Tasks
+
+### OBJ-1: Secure the Organization
+
+**Strategy 1.1 — Stand up monitoring**
+- [x] Complete SIEM implementation `(You)` — *completed 2026-02-27*
+- [ ] Ship firewall logs into monitoring `(You)` `10%` <!-- planner:TASK_ID_HERE -->
+- [ ] Harden password manager posture `(You)` `75%` <!-- planner:TASK_ID_HERE -->
+
+### OBJ-2: Modernize Operations
+
+**Strategy 2.1 — Automate lifecycle**
+- [ ] Automate employee offboarding `(Team)` `0%` <!-- planner:TASK_ID_HERE -->
+
+## Vault — Second Brain
+
+The vault is a local markdown wiki at `~/vault/`.
+
+### On Session Start
+1. Read `~/vault/inbox/welcome.md` (master index)
+2. Read relevant project note for user's question
+
+### On Session End
+1. Update vault notes where progress changed
+2. Create daily log in `~/vault/daily/YYYY-MM-DD.md`
